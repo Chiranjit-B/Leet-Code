@@ -5,15 +5,15 @@ class Solution:
             if i == "+" :
                 a = stack.pop()
                 b = stack.pop()
-                stack.append(b + a)
+                stack.append(a + b)
             elif i == "-" :
                 a = stack.pop()
                 b = stack.pop()
-                stack.append(b - a)
+                stack.append(b-a)
             elif i == "*" :
                 a = stack.pop()
                 b = stack.pop()
-                stack.append(b * a)
+                stack.append(a * b)
             elif i == "/" :
                 a = stack.pop()
                 b = stack.pop()
@@ -21,3 +21,5 @@ class Solution:
             else :
                 stack.append(int(i))
         return stack[0]
+
+        
