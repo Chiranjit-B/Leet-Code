@@ -7,9 +7,9 @@ class Solution:
             for i in range(len(s)) :
                 ds[s[i]] = 1 + ds.get(s[i],0)
                 dt[t[i]] = 1 + dt.get(t[i],0)
-            
+                
             for i in ds :
                 if ds[i] != dt.get(i,0) :
-                    return False 
+                    return False
                 
         return True
