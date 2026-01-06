@@ -1,8 +1,8 @@
 class MinStack:
 
     def __init__(self):
-        self.stack = []
-        self.min_stack = []
+        self.stack = [] # default stack for regular stack operations
+        self.min_stack = [] # default stack for special min operations
         
 
     def push(self, val: int) -> None:
@@ -10,9 +10,8 @@ class MinStack:
         if not self.min_stack :
             self.min_stack.append(val)
         else :
-            val = min(self.min_stack[-1],val)
-            self.min_stack.append(val)
-        
+            val = min(self.min_stack[-1], val)
+            self.min_stack.append(val)     
 
     def pop(self) -> None:
         self.stack.pop()
