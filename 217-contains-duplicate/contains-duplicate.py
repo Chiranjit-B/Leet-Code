@@ -4,6 +4,6 @@ class Solution:
         for i in nums :
             if i in dis :
                 return True
-            dis.add(i)
+            else :
+                dis.add(i)
         return False
-        
