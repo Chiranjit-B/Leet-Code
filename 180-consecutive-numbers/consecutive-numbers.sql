@@ -1,8 +1,7 @@
 # Write your MySQL query statement below
-SELECT DISTINCT(a.num)  AS ConsecutiveNums
+SELECT DISTINCT a.num AS ConsecutiveNums
 FROM Logs a
 JOIN Logs b 
-on a.id = b.id+1 and a.num = b.num
+ON a.num = b.num AND a.id = b.id+1
 JOIN Logs c
-ON a.id = c.id+2 and a.num = c.num
-
+ON a.num = c.num AND a.id = c.id+2
